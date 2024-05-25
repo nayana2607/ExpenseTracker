@@ -6,6 +6,7 @@ import { GlobalStyles } from "../../constants/styles";
 const ExpensesOutput = (props) => {
   let content = <Text style={styles.infoText}>{props.fallBackText}</Text>;
   if (props.expenses.length > 0) {
+    console.log(props);
     content = <ExpensesList expenses={props.expenses} />;
   }
   return (
